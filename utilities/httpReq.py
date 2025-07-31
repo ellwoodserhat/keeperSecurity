@@ -7,6 +7,7 @@ DEFAULT_HEADERS = {
     "Content-Type": "application/json"
 }
 
+# ReqRes api does not allow encrypted request body, so that I did not use encrypted request bodies
 def request(method, endpoint, data=None, headers=None, encrypt=False):
     url = f"{BASE_URL}{endpoint}"
     method = method.upper()
